@@ -15,7 +15,7 @@ The user can: examine the structure and all files of the package, run files from
 
 ## INSTALLATION INSTRUCTIONS
 
-1.Download and install Julia (version 1.10 or later) from the [official website](https://julialang.org/downloads/).
+1.Download and install Julia (version 1.9 or later) from the [official website](https://julialang.org/downloads/).
 
 2.Install the Plots and GR packages
 
