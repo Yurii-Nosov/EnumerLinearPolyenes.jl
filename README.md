@@ -7,8 +7,10 @@ This article is currently under review.
 ## Installation
 
 Development Status - Work In Progress.
-Due to issues with the Plots package, our package cannot be installed as a full julia package. That is, using the statements
+Due to issues with the Plots package, our package cannot be installed as a full julia package  that is, using the statements
 `using Pkg` and `Pkg.add("EnumerLinearPolyenes")` or via the REPL.
+
+Note: Automated tests are disabled to simplify publishing. The code has been manually tested. Running the examples requires the Plots.jl package to be installed.
 
 However, any user can create a clone of the `EnumerLinearPolyenes` package on their computer and work with it.
 The user can: examine the structure and all files of the package, run files from the **examples** folder, create new files in it, fix any errors found, test the package, and create new files for testing.
