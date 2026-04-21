@@ -74,7 +74,6 @@ following functions:
 
 Example function call:
 
-    using EnumerateLinearPolyenes
     graphs_type = 1 # isomers
     order = 8 
     #   calculation
@@ -98,8 +97,6 @@ You can obtain this distribution vector using the function:
 `calc_distr_all_graphs_overlap(list_vertex_code)`.
 
 Example of calling the function, processing the distribution vector, and outputting results:
-
-    using EnumerateLinearPolyenes
 
     # Generate vector of Yeh graph codes
 
@@ -137,7 +134,6 @@ You can determine this tuple using:
 
 Example `calling count_codes_from_edge(n)`:
 
-   using EnumerateLinearPolyenes
    n = 8 # order
    list_vertex_code = count_codes_from_edge(n)
 
@@ -165,7 +161,6 @@ You can get this tuple using the functioncount_other_conformers(n).
 
 Example calling `count_other_conformers(n)`:
 
-    using EnumerateLinearPolyenes
     n = 8    # order
 
     # Calculate distribution
@@ -189,8 +184,8 @@ molecular graph of order `n = 8`, the edge list is `[[1,2],[2,3],[3,4],[4,5],[5
 
 ## Examples of Function Calls
 
-Examples of calling and using all main functions are provided in the examples folder.
-The corresponding results are stored in the Results folder. Note that all calculation
+Examples of calling and using all main functions are provided in the **examples** folder.
+The corresponding results are stored in the **Results** folder. Note that all calculation
  results presented in the article were obtained using programs collected in the examples folder.
 
 ## Folder: codes_generation
@@ -216,13 +211,13 @@ Review the resulting codes in terminale.
 
 Copy and run the file `exm_distrib_graphs_by_type.jl` in REPL.
 The results should match those in the Distrib_molecular_graphs folder in
-the DistribNumberMolGraphs.txt file.
+the `DistribNumberMolGraphs.txt` file.
 
 ### Calculating Distribution of Conformer Graphs of Other Isomers by Subclasses
 
 Copy and run the file `exm_distrib_graphs_sub_graphs_coi.jl` in REPL.
 The results should match those in the Distrib_molecular_graphs folder in the
-DistribNumbSubGraphsCOI.ixt file.
+`DistribNumbSubGraphsCOI.ixt` file.
 
 ## Folder: create_and_output_graphs
 
@@ -239,7 +234,7 @@ Review the resulting edge and coordinate lists.
 ### Creating and Outputting Molecular Graphs with Suppressed Hydrogen Atoms
 
 Copy and run the file `exm_output_graphs_cc.jl` in REPL.
-The results should match those in the Figures folder
+The results should match those in the **Figures**  folder
 (subfolders: Isomers_and_Conformers).
 
 ### Creating and Outputting Molecular Graphs with Hydrogen Atoms
@@ -253,13 +248,13 @@ The results should match those in the Figures folder (subfolders: Isom
 
 Copy and run the file `exm_distrib_overlap_n14_26.jl` in REPL.
 A text file `DistribYehGraphsByOverlap.txt` will be created in the
-DistributionYehGraphsByOverlap folder.
+`DistributionYehGraphsByOverlap` folder.
 
 ### Calculating Overlap Pair Distribution for Yeh Graphs of Order 28–30
 
-Copy and run the file exm_distrib_overlap_n28_30.jl in REPL.
+Copy and run the file `exm_distrib_overlap_n28_30.jl` in REPL.
 
-Two text files will be created in the DistributionYehGraphsByOverlap folder:
+Two text files will be created in the `DistributionYehGraphsByOverlap` folder:
 
     - `ResultDistribYehGraphsOverlapN28.txt`
     
@@ -269,25 +264,25 @@ Two text files will be created in the DistributionYehGraphsByOverlap fo
 
 Copy and run the file `exm_output_list_yeh_graphs_overlap.jl` in REPL.
 A text file `ListDistribYehGraphsOverlap.txt` will be created in the
-DistributionYehGraphsByOverlap folder.
+`DistributionYehGraphsByOverlap` folder.
 
 ### Displaying and Saving Graph Images with Specified Overlap Pairs
 
 Copy and run the file `exm_show_select_graphs_overlap.jl` in REPL.
-For graphs of order `n = 18`, results should match those in the ShowSelectOverlapN18 folder.
-For graphs of order `n = 24`, results should match those in the ShowSelectOverlapN24 folder.
+For graphs of order `n = 18`, results should match those in the `ShowSelectOverlapN18` folder.
+For graphs of order `n = 24`, results should match those in the `ShowSelectOverlapN24` folder.
 
 ## Folder: distrib_graphs_by_symmetry
 
 ### Calculating Symmetry Group Distribution for Isomers
 
 Copy and run the file `exm_distr_isomers_by_symmetry.jl` in REPL.
-The results should match those in the Distrib_molecular_graphs_by_symmetry folder in
-the DistribNumberIsomersBySymmetry.txt file.
+The results should match those in the `Distrib_molecular_graphs_by_symmetry` folder in
+the `DistribNumberIsomersBySymmetry.txt` file.
 
 ### Calculating Symmetry Group Distribution for Trans‑Isomer Conformers
 
 Copy and run the file `exm_distr_con_trn_iso_by_symmetry.jl` in REPL.
 
-The results should match those in the Distrib_molecular_graphs_by_symmetry folder in the
-DistribNumberConTransIsoBySymmetry.txt file.
+The results should match those in the `Distrib_molecular_graphs_by_symmetry` folder in the
+`DistribNumberConTransIsoBySymmetry.txt` file.
