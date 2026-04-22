@@ -6,14 +6,21 @@ This article is currently under review.
 
 ## Installation
 
-Development Status - Work In Progress.
-Due to issues with the Plots package, our package cannot be installed as a full julia package  that is, using the statements
-`using Pkg` and `Pkg.add("EnumerLinearPolyenes")` or via the REPL.
+You can obtain the package code in two ways:
 
-Note: Automated tests are disabled to simplify publishing. The code has been manually tested. Running the examples requires the Plots.jl package to be installed.
+1. **Via release (recommended for reproducing the article’s results):**  
+   Download the ready‑made code archive using the link in the section **«Version for arXiv publication»** below.  
+   This method does not require Git and guarantees correspondence to the code used in the article.
 
-However, any user can create a clone of the `EnumerLinearPolyenes` package on their computer and work with it.
-The user can: examine the structure and all files of the package, run files from the **examples** folder, create new files in it, fix any errors found, test the package, and create new files for testing.
+2. **Via cloning the repository (for development and contributions):**  
+   Follow the instructions below to clone the full history of changes.
+
+Development Status — Work In Progress.  
+Due to issues with the `Plots` package, our package cannot be installed as a full Julia package — that is, using the statements `using Pkg` and `Pkg.add("EnumerLinearPolyenes")` or via the REPL.
+
+**Note:** Automated tests are disabled to simplify publishing. The code has been manually tested. Running the examples requires the Plots.jl package to be installed.
+
+However, any user can create a clone of the `EnumerLinearPolyenes` package on their computer and work with it. The user can: examine the structure and all files of the package, run files from the **examples** folder, create new files in it, fix any errors found, test the package, and create new files for testing.
 
 ## INSTALLATION INSTRUCTIONS
 
@@ -97,6 +104,41 @@ git clone https://github.com/Yurii-Nosov/EnumerLinearPolyenes.jl.git
 ```
 
 5.This will create a clone of the `EnumerLinearPloyenes` repository named `EnumerLinearPloyenes.jl` on the user's computer in the folder they selected.
+
+## Version for arXiv publication
+
+This version of the code was used to prepare the article:
+Yu.L. Nosov, M.N. Nazarov, «Constructive enumeration and study of molecular graphs of unbranched conjugated polene hydrocarbons».
+
+- Tag: v0.1.0-arxiv
+
+- Date: April 21, 2024
+
+- Release link: [github.com/.../releases/tag/v0.1.0-arxiv](https://github.com/Yurii-Nosov/EnumerLinearPolyenes.jl/releases/tag/v0.1.0-arxiv/)
+
+What downloading the release provides:
+
+- a ready‑made code archive without the need to install Git;
+
+- guaranteed correspondence to the code used in the article;
+
+- files in a stable state — without recent changes from the main branch.
+
+How to use the downloaded archive:
+
+1. Download the .zip archive using the link above.
+
+2. Unpack it into any folder on your computer.
+
+3. Open the unpacked folder in VS Code.
+
+4. Install dependencies (if not already installed):
+
+```julia
+julia> ] add Plots GR
+```
+
+5.Run the examples from the **examples** folder, following the instructions in `input_output_guide.md`.
 
 ### Basic Usage
 
